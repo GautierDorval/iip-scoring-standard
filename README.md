@@ -48,6 +48,15 @@ Those elements exist, but are **licensable under contract** only.
 
 - Canonical identity: https://gautierdorval.com/
 - GitHub repository (recommended): https://github.com/GautierDorval/iip-scoring-standard
+- Canonical doctrinal page: https://gautierdorval.com/iip-scoring-cadre-doctrinal/
+
+## Parent doctrine (normative)
+
+IIP-Scoring™ is a measurement layer conceptually derived from the broader **Interpretive Governance**
+doctrinal architecture.
+
+Normative reference:
+- https://github.com/GautierDorval/interpretive-governance-manifest
 
 ## Directory overview
 
