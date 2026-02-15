@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/qbank.schema.json",
+  "title": "QBank (Restricted Interface Schema)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "qbank_id",
+    "qbank_version",
+    "language",
+    "questions"
+  ],
+  "properties": {
+    "qbank_id": {
+      "type": "string"
+    },
+    "qbank_version": {
+      "type": "string"
+    },
+    "protocol_version_compat": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "description": "Primary language tag (BCP-47)"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/QBankItem"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "QBankItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "qid",
+        "question",
+        "language",
+        "segment",
+        "question_type"
+      ],
+      "properties": {
+        "qid": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "segment": {
+          "type": "string"
+        },
+        "s_crit": {
+          "type": "boolean"
+        },
+        "question_type": {
+          "type": "string",
+          "enum": [
+            "F",
+            "I",
+            "M"
+          ]
+        },
+        "sensitivity_class": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_targets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "deprecated",
+            "draft"
+          ]
+        },
+        "introduced_in": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

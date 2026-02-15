@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "status": "restricted-public-spec",
+  "date": "2026-02-15",
+  "canonical_identity": "https://gautierdorval.com/",
+  "recommended_repo": "https://github.com/GautierDorval/iip-scoring-standard",
+  "sha256sums": "SHA256SUMS.txt",
+  "notes": [
+    "This is a restricted public specification snapshot.",
+    "Operational implementation, calibrated thresholds, weights, and heuristics are intentionally omitted."
+  ]
+}

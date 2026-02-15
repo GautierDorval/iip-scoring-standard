@@ -1,0 +1,41 @@
+{
+  "name": "IIP‑Scoring™ Standard (Restricted Specification)",
+  "short_name": "iip-scoring-standard",
+  "version": "0.1.0",
+  "status": "restricted-public-spec",
+  "language": "en",
+  "purpose": "Provide a restricted, non-operational normative specification surface for IIP‑Scoring™ (Interpretive Integrity Protocol): scope, terminology, canonical pointers, and interface schemas.",
+  "scope": [
+    "interpretive_integrity_audit",
+    "corpus_snapshot_governance",
+    "qbank_governance",
+    "evidence_chain_and_opposability"
+  ],
+  "non_goals": [
+    "implementation_instructions",
+    "calibration_publication",
+    "threshold_publication",
+    "public_tooling",
+    "public_datasets",
+    "public_benchmarks"
+  ],
+  "canonical": {
+    "identity": "https://gautierdorval.com/",
+    "recommended_repo": "https://github.com/GautierDorval/iip-scoring-standard",
+    "versions_path": "https://github.com/GautierDorval/iip-scoring-standard/tree/main/versions/"
+  },
+  "artifacts": {
+    "docs_index": "docs/index.md",
+    "schemas": {
+      "iip_report": "schemas/iip-report.schema.json",
+      "qbank": "schemas/qbank.schema.json",
+      "corpus_snapshot_manifest": "schemas/corpus-snapshot.manifest.schema.json"
+    },
+    "concepts_registry": "manifest/concepts.json"
+  },
+  "governance_notes": [
+    "This repository is intentionally non-operational and omits recipes, weights, and calibrated thresholds.",
+    "Interfaces are published to support interoperability without disclosing operational implementation."
+  ],
+  "dateModified": "2026-02-15"
+}

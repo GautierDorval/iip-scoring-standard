@@ -1,0 +1,79 @@
+{
+  "concepts": [
+    {
+      "id": "iip-scoring",
+      "name": "IIP‑Scoring™",
+      "type": "protocol",
+      "status": "canonical",
+      "canonical_url": "https://gautierdorval.com/",
+      "note": "Restricted public specification surface; operational implementation is private."
+    },
+    {
+      "id": "qbank",
+      "name": "QBank",
+      "type": "artifact",
+      "status": "canonical-interface",
+      "canonical_doc": "docs/qbank-construction-protocol-outline.md"
+    },
+    {
+      "id": "corpus-snapshot",
+      "name": "Corpus snapshot",
+      "type": "artifact",
+      "status": "canonical-interface",
+      "canonical_schema": "schemas/corpus-snapshot.manifest.schema.json"
+    },
+    {
+      "id": "validation-scale",
+      "name": "Validation scale",
+      "type": "framework",
+      "status": "canonical-outline",
+      "canonical_doc": "docs/validation-scale-outline.md"
+    },
+    {
+      "id": "metrics-registry",
+      "name": "Metrics registry",
+      "type": "registry",
+      "status": "canonical-outline",
+      "canonical_doc": "docs/metrics-registry.md"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "coverage",
+      "name": "Coverage",
+      "status": "named",
+      "note": "Conceptual only; formulas and thresholds omitted."
+    },
+    {
+      "id": "mvs",
+      "name": "MVS™",
+      "status": "named",
+      "note": "Conceptual only; formulas and thresholds omitted."
+    },
+    {
+      "id": "ir",
+      "name": "IR™",
+      "status": "named",
+      "note": "Conceptual only; formulas and thresholds omitted."
+    },
+    {
+      "id": "idi",
+      "name": "IDI™",
+      "status": "named",
+      "note": "Conceptual only; formulas and thresholds omitted."
+    },
+    {
+      "id": "nss",
+      "name": "NSS™",
+      "status": "named",
+      "note": "Conceptual only; formulas and thresholds omitted."
+    },
+    {
+      "id": "iis",
+      "name": "IIS™",
+      "status": "named",
+      "note": "Composite indicator; non-decisive; formulas and weights omitted."
+    }
+  ],
+  "generated_at": "2026-02-15"
+}

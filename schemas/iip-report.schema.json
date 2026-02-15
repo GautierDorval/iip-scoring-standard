@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/iip-report.schema.json",
+  "title": "IIP Report (Restricted Interface Schema)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol",
+    "run",
+    "qbank",
+    "corpus_snapshot",
+    "validation"
+  ],
+  "properties": {
+    "protocol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "IIP‑Scoring™"
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_id",
+        "executed_at",
+        "mode",
+        "models"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string"
+        },
+        "executed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "incognito",
+            "rag",
+            "agentic",
+            "offline",
+            "unknown"
+          ]
+        },
+        "models": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "k": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "qbank": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "qbank_id",
+        "qbank_version"
+      ],
+      "properties": {
+        "qbank_id": {
+          "type": "string"
+        },
+        "qbank_version": {
+          "type": "string"
+        },
+        "qbank_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "corpus_snapshot": {
+      "$ref": "corpus-snapshot.manifest.schema.json"
+    },
+    "results": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "segment_summaries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "segment_id",
+              "question_count"
+            ],
+            "properties": {
+              "segment_id": {
+                "type": "string"
+              },
+              "question_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "coverage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "mvs": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "ir": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "idi": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "nss": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "iis": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grade"
+      ],
+      "properties": {
+        "grade": {
+          "type": "string",
+          "enum": [
+            "L0",
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        "failed_gates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "report_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "evidence_chain_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "content_type": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

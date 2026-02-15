@@ -1,0 +1,32 @@
+{
+  "name": "IIP‑Scoring™ Standard (Restricted Specification)",
+  "short_name": "iip-scoring-standard",
+  "version": "0.1.0",
+  "status": "restricted-public-spec",
+  "language": "en",
+  "description": "Restricted, non-operational normative specification for IIP‑Scoring™ (Interpretive Integrity Protocol): terminology, scope, interfaces, and canonical pointers (no implementation, no calibration, no recipes).",
+  "topics": [
+    "ai-governance",
+    "audit",
+    "interpretive-governance",
+    "llm",
+    "risk-management",
+    "machine-readable",
+    "json-schema",
+    "semantics",
+    "ontology",
+    "compliance",
+    "interpretive-integrity",
+    "qbank",
+    "iip-scoring"
+  ],
+  "canonical": {
+    "identity": "https://gautierdorval.com/",
+    "recommended_repo": "https://github.com/GautierDorval/iip-scoring-standard"
+  },
+  "generated_at": "2026-02-15",
+  "notes": [
+    "This repository intentionally omits implementation details, calibrated thresholds, and operational heuristics.",
+    "Schemas define interfaces only; they do not encode algorithms."
+  ]
+}
