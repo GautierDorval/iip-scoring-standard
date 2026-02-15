@@ -1,10 +1,10 @@
 {
-  "name": "IIP‑Scoring™ Standard (Restricted Specification)",
+  "name": "IIP-Scoring™ Standard (Restricted Specification)",
   "short_name": "iip-scoring-standard",
   "version": "0.1.0",
   "status": "restricted-public-spec",
   "language": "en",
-  "purpose": "Provide a restricted, non-operational normative specification surface for IIP‑Scoring™ (Interpretive Integrity Protocol): scope, terminology, canonical pointers, and interface schemas.",
+  "purpose": "Provide a restricted, non-operational normative specification surface for IIP-Scoring™ (Interpretive Integrity Protocol): scope, terminology, canonical pointers, and interface schemas.",
   "scope": [
     "interpretive_integrity_audit",
     "corpus_snapshot_governance",
@@ -17,12 +17,19 @@
     "threshold_publication",
     "public_tooling",
     "public_datasets",
-    "public_benchmarks"
+    "public_benchmarks",
+    "runnable_end_to_end_examples"
   ],
   "canonical": {
     "identity": "https://gautierdorval.com/",
+    "canonical_doctrinal_page": "https://gautierdorval.com/iip-scoring-cadre-doctrinal/",
     "recommended_repo": "https://github.com/GautierDorval/iip-scoring-standard",
     "versions_path": "https://github.com/GautierDorval/iip-scoring-standard/tree/main/versions/"
+  },
+  "relationships": {
+    "parent_doctrine_repo": "https://github.com/GautierDorval/interpretive-governance-manifest",
+    "audit_protocol_reference": "https://interpretive-governance.org/protocols/interpretation-integrity-audit/",
+    "note": "This repository is a restricted public spec surface only. It is conceptually derived from interpretive governance doctrine, but does not define that doctrine."
   },
   "artifacts": {
     "docs_index": "docs/index.md",
@@ -31,11 +38,19 @@
       "qbank": "schemas/qbank.schema.json",
       "corpus_snapshot_manifest": "schemas/corpus-snapshot.manifest.schema.json"
     },
-    "concepts_registry": "manifest/concepts.json"
+    "concepts_registry": "manifest/concepts.json",
+    "version_snapshot": "versions/0.1.0/"
+  },
+  "governance": {
+    "repository_role": "restricted_spec_surface",
+    "operational_status": "non-operational",
+    "distribution_policy": "reference-only",
+    "licensing_note": "Operational deployment, calibration, sector-specific decisioning, and full QBank sets are not published here and remain available only under license."
   },
   "governance_notes": [
-    "This repository is intentionally non-operational and omits recipes, weights, and calibrated thresholds.",
-    "Interfaces are published to support interoperability without disclosing operational implementation."
+    "This repository is intentionally non-operational and omits recipes, weights, calibrated thresholds, and runnable end-to-end examples.",
+    "Interfaces are published to support interoperability and reference citation without disclosing operational implementation.",
+    "Any external use must not imply certification, conformance, endorsement, or compliance guarantees."
   ],
   "dateModified": "2026-02-15"
 }
