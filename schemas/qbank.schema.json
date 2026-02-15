@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/schemas/qbank.schema.json",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/main/schemas/qbank.schema.json",
   "title": "QBank (Restricted Interface Schema)",
   "type": "object",
+  "$comment": "Restricted public specification. Interface schema only. No operational recipes, quotas, or sector calibrations are published here.",
   "additionalProperties": false,
   "required": [
     "qbank_id",
@@ -38,6 +39,7 @@
   "$defs": {
     "QBankItem": {
       "type": "object",
+      "$comment": "A single question record. This schema describes structure only. It does not define operational selection, distribution, or scoring rules.",
       "additionalProperties": false,
       "required": [
         "qid",
@@ -54,13 +56,15 @@
           "type": "string"
         },
         "language": {
-          "type": "string"
+          "type": "string",
+          "description": "Language tag for this question (BCP-47)."
         },
         "segment": {
           "type": "string"
         },
         "s_crit": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "Marks the question as belonging to a critical segment (conceptual marker only)."
         },
         "question_type": {
           "type": "string",
@@ -68,7 +72,8 @@
             "F",
             "I",
             "M"
-          ]
+          ],
+          "description": "Question type: F (factual), I (interpretive), M (meta/boundary)."
         },
         "sensitivity_class": {
           "type": "string",
@@ -88,7 +93,8 @@
         "evidence_targets": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "format": "uri"
           }
         },
         "status": {
