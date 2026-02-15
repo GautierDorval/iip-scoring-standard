@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/schemas/corpus-snapshot.manifest.schema.json",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/main/schemas/corpus-snapshot.manifest.schema.json",
   "title": "Corpus Snapshot Manifest (Restricted Interface Schema)",
   "type": "object",
+  "$comment": "Restricted public specification. Interface schema only. This does not define crawling procedures, storage SOPs, or operational collection recipes.",
   "additionalProperties": false,
   "required": [
     "snapshot_id",
@@ -48,6 +49,7 @@
   "$defs": {
     "SnapshotSource": {
       "type": "object",
+      "$comment": "A single snapshot source reference. Structure only; evidence policies are defined elsewhere.",
       "additionalProperties": false,
       "required": [
         "source_id",
@@ -68,7 +70,8 @@
           ]
         },
         "uri": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "retrieved_at": {
           "type": "string",
