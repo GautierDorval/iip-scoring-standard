@@ -1,0 +1,10 @@
+{
+  "version": "0.1.2",
+  "tag": "v0.1.2",
+  "snapshot_path": "versions/0.1.2/",
+  "generated_at": "2026-02-16T18:50:53Z",
+  "notes": [
+    "Release snapshot metadata for opposability. This file does not encode operational scoring recipes.",
+    "SHA256SUMS.txt lists integrity hashes for public reference artifacts in this repository (excluding versions/ snapshots)."
+  ]
+}

@@ -1,7 +1,7 @@
 # IIP‑Scoring™ Standard (Restricted Specification)
 
 **Repository status:** restricted-public-spec  
-**Version:** 0.1.0  
+**Version:** 0.1.2  
 **Language:** English (primary)
 
 This repository contains a **restricted, non-operational normative specification** for **IIP‑Scoring™** (Interpretive Integrity Protocol).
@@ -40,9 +40,23 @@ To protect the integrity of the protocol and prevent diluted implementations, th
 - operational heuristics,
 - executable tooling,
 - complete QBank sets,
-- report templates used in client delivery.
+- client delivery templates used in licensed audits.
 
 Those elements exist, but are **licensable under contract** only.
+
+## Examples (structure only)
+
+This repository includes **non-operational examples** under `examples/` to make the interfaces concrete without disclosing operational recipes:
+- `examples/iip-report.example.json` (report structure)
+- `examples/qbank.example.json` (QBank structure)
+- `examples/corpus-snapshot.manifest.example.json` (snapshot manifest structure)
+
+**Important:** values in examples are illustrative and must not be interpreted as calibrated outputs, thresholds, or operational settings.
+
+## Machine-readable semantics
+
+- JSON-LD term set (concept alignment): `manifest/iip-scoring.terms.jsonld`
+- Concept registry (named metrics, conceptual only): `manifest/concepts.json`
 
 ## Canonical references
 
@@ -52,7 +66,7 @@ Those elements exist, but are **licensable under contract** only.
 
 ## Parent doctrine (normative)
 
-IIP-Scoring™ is a measurement layer conceptually derived from the broader **Interpretive Governance**
+IIP‑Scoring™ is a measurement layer conceptually derived from the broader **Interpretive Governance**
 doctrinal architecture.
 
 Normative reference:
@@ -60,14 +74,16 @@ Normative reference:
 
 ## Directory overview
 
-- `manifest/` — declarative manifest + concept registry
+- `manifest/` — declarative manifest + concept registry + JSON-LD terms
 - `schemas/` — JSON Schemas (interfaces, not algorithms)
 - `docs/` — restricted specification documents (normative, non-operational)
+- `examples/` — structural examples (non-operational)
 - `versions/` — release snapshots (hashes, version metadata)
 
 ## License
 
-This repository is **proprietary**. See `LICENSE.md`.
+This repository is **proprietary and restricted**, but published publicly as a reference surface.
+See `LICENSE.md` for permitted uses (including schema interoperability) and restrictions.
 
 ## Contact / Licensing
 

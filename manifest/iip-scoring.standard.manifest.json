@@ -1,7 +1,7 @@
 {
   "name": "IIP-Scoring™ Standard (Restricted Specification)",
   "short_name": "iip-scoring-standard",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "status": "restricted-public-spec",
   "language": "en",
   "purpose": "Provide a restricted, non-operational normative specification surface for IIP-Scoring™ (Interpretive Integrity Protocol): scope, terminology, canonical pointers, and interface schemas.",
@@ -24,7 +24,8 @@
     "identity": "https://gautierdorval.com/",
     "canonical_doctrinal_page": "https://gautierdorval.com/iip-scoring-cadre-doctrinal/",
     "recommended_repo": "https://github.com/GautierDorval/iip-scoring-standard",
-    "versions_path": "https://github.com/GautierDorval/iip-scoring-standard/tree/main/versions/"
+    "versions_path": "https://github.com/GautierDorval/iip-scoring-standard/tree/main/versions/",
+    "pinned_tag": "v0.1.2"
   },
   "relationships": {
     "parent_doctrine_repo": "https://github.com/GautierDorval/interpretive-governance-manifest",
@@ -39,7 +40,8 @@
       "corpus_snapshot_manifest": "schemas/corpus-snapshot.manifest.schema.json"
     },
     "concepts_registry": "manifest/concepts.json",
-    "version_snapshot": "versions/0.1.0/"
+    "version_snapshot": "versions/0.1.2/",
+    "terms_jsonld": "manifest/iip-scoring.terms.jsonld"
   },
   "governance": {
     "repository_role": "restricted_spec_surface",
@@ -52,5 +54,5 @@
     "Interfaces are published to support interoperability and reference citation without disclosing operational implementation.",
     "Any external use must not imply certification, conformance, endorsement, or compliance guarantees."
   ],
-  "dateModified": "2026-02-15"
+  "dateModified": "2026-02-16"
 }

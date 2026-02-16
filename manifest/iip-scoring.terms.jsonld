@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "termCode": "termCode",
+    "inDefinedTermSet": "inDefinedTermSet",
+    "isBasedOn": "isBasedOn",
+    "isPartOf": "isPartOf",
+    "isReferencedBy": "isReferencedBy"
+  },
+  "@type": "DefinedTermSet",
+  "@id": "https://gautierdorval.com/iip-scoring/terms",
+  "name": "IIP‑Scoring™ terms (restricted public specification)",
+  "description": "Machine-readable concept surface for IIP‑Scoring™ (Interpretive Integrity Protocol). This term set defines names and meanings, not formulas, weights, thresholds, or operational heuristics.",
+  "version": "0.1.2",
+  "license": "https://gautierdorval.com/iip-scoring-standard/license",
+  "isPartOf": "https://gautierdorval.com/iip-scoring-cadre-doctrinal/",
+  "isBasedOn": "https://github.com/GautierDorval/interpretive-governance-manifest",
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#iip-scoring",
+      "termCode": "iip-scoring",
+      "name": "IIP‑Scoring™",
+      "description": "A restricted, snapshot-bounded interpretive integrity audit protocol. This public repository publishes interfaces and terminology only; operational implementation is private.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#corpus-snapshot",
+      "termCode": "corpus-snapshot",
+      "name": "Corpus snapshot",
+      "description": "A declared, versioned truth base (manifest + sources) used to bound what is considered grounded within a run.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical-interface"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#qbank",
+      "termCode": "qbank",
+      "name": "QBank",
+      "description": "A structured audit question bank used to probe interpretive integrity under controlled conditions. Public repository publishes structure only.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical-interface"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#opposability",
+      "termCode": "opposability",
+      "name": "Opposability",
+      "description": "Property of an audit result being contestable and reconstructible against the same frozen evidence surfaces (snapshot + QBank + run conditions + logs).",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#grade-L0-L4",
+      "termCode": "grade-L0-L4",
+      "name": "Validation grade (L0–L4)",
+      "description": "Non-compensable grade indicating the minimum validation level achieved by a run. Gates may fail independently of composite indicators.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical-outline"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#gate",
+      "termCode": "gate",
+      "name": "Gate",
+      "description": "A non-compensable constraint that can independently fail a run regardless of composite indicators (e.g., evidence sufficiency, integrity, critical segment failure).",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical-outline"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#s_crit",
+      "termCode": "s_crit",
+      "name": "s_crit",
+      "description": "Marker indicating a question belongs to a critical segment. Critical segment failures cannot be overridden by composite indicators.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-canonical-outline"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#coverage",
+      "termCode": "coverage",
+      "name": "Coverage",
+      "description": "Coverage indicator describing how much of a QBank yields qualifiable outputs under the protocol’s verdict taxonomy. Formulas and thresholds omitted.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-named"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#mvs",
+      "termCode": "mvs",
+      "name": "MVS™",
+      "description": "Meaning Verification Score (conceptual). A signal describing the share of outputs that remain grounded in the declared corpus snapshot. Formulas and thresholds omitted.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-named"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#ir",
+      "termCode": "ir",
+      "name": "IR™",
+      "description": "Inference Rate (conceptual). A signal describing the share of outputs that extend beyond admissible evidence within the snapshot-bounded regime. Formulas and thresholds omitted.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-named"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#idi",
+      "termCode": "idi",
+      "name": "IDI™",
+      "description": "Interpretive Distortion Index (conceptual). A signal describing contradictions or false claims relative to the snapshot-bounded truth base. Formulas and thresholds omitted.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-named"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#nss",
+      "termCode": "nss",
+      "name": "NSS™",
+      "description": "Narrative Stability Signal (conceptual). A signal describing output stability across controlled runs and/or across systems (audit mode dependent). Formulas and thresholds omitted.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-named"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gautierdorval.com/iip-scoring/terms#iis",
+      "termCode": "iis",
+      "name": "IIS™",
+      "description": "Interpretive Integrity Score (conceptual composite). Intended for communication only; must never override gates or critical segment constraints. Formulas and weights omitted.",
+      "inDefinedTermSet": "https://gautierdorval.com/iip-scoring/terms",
+      "additionalType": "https://gautierdorval.com/iip-scoring/terms#status-named"
+    }
+  ]
+}

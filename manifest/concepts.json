@@ -5,8 +5,8 @@
       "name": "IIP‑Scoring™",
       "type": "protocol",
       "status": "canonical",
-      "canonical_url": "https://gautierdorval.com/",
-      "note": "Restricted public specification surface; operational implementation is private."
+      "canonical_url": "https://gautierdorval.com/iip-scoring-cadre-doctrinal/",
+      "note": "Restricted public specification surface; operational implementation is private. This repository publishes interfaces and terminology only."
     },
     {
       "id": "qbank",
@@ -35,6 +35,13 @@
       "type": "registry",
       "status": "canonical-outline",
       "canonical_doc": "docs/metrics-registry.md"
+    },
+    {
+      "id": "terms-jsonld",
+      "name": "IIP-Scoring terms (JSON-LD)",
+      "type": "artifact",
+      "status": "canonical-interface",
+      "canonical_doc": "manifest/iip-scoring.terms.jsonld"
     }
   ],
   "metrics": [
@@ -75,5 +82,5 @@
       "note": "Composite indicator; non-decisive; formulas and weights omitted."
     }
   ],
-  "generated_at": "2026-02-15"
+  "generated_at": "2026-02-16"
 }

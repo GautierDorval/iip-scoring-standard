@@ -1,0 +1,93 @@
+{
+  "protocol": {
+    "name": "IIP-Scoring™",
+    "version": "0.1.2",
+    "status": "restricted-public-spec"
+  },
+  "run": {
+    "run_id": "run.example.0001",
+    "executed_at": "2026-02-16T00:00:00Z",
+    "mode": "offline",
+    "models": [
+      "model.example.v1"
+    ],
+    "k": 3,
+    "notes": "Non-operational example run (structure only)."
+  },
+  "qbank": {
+    "qbank_id": "qbank.example.minimal",
+    "qbank_version": "0.0.1",
+    "qbank_sha256": "3d1f07bff9685d0f8d12fa80664916af36753744f25b699b9fd12c32b951c93e"
+  },
+  "corpus_snapshot": {
+    "snapshot_id": "snapshot.example.minimal",
+    "snapshot_version": "0.0.1",
+    "created_at": "2026-02-16T00:00:00Z",
+    "notes": "Non-operational example for schema illustration only. Not a production snapshot.",
+    "sources": [
+      {
+        "source_id": "src-001",
+        "source_type": "url",
+        "uri": "https://example.com/corpus/identity",
+        "retrieved_at": "2026-02-16T00:00:00Z",
+        "sha256": "4b4d6bbec06e3e02cb6075b78bb8f9955de127afd8eef5f17ff154bdcb70354f",
+        "content_type": "text/html",
+        "canonical": true
+      },
+      {
+        "source_id": "src-002",
+        "source_type": "url",
+        "uri": "https://example.com/corpus/policies",
+        "retrieved_at": "2026-02-16T00:00:00Z",
+        "sha256": "333381b65b049a14a4b3de075908f9ee4f915c33d2735e40d6083cae969eadc7",
+        "content_type": "text/html",
+        "canonical": true
+      }
+    ],
+    "integrity": {
+      "manifest_sha256": "938a55c7f25fb3900f82f0e6c8a21000302ce8ccacaa0c89b50812758a9dd509",
+      "served_bytes_sha256": "0f246dc9f07a16b6b99c72eba623846d8565108fe01232a803d5d5ea9b4469db"
+    }
+  },
+  "results": {
+    "segment_summaries": [
+      {
+        "segment_id": "identity",
+        "question_count": 1,
+        "notes": "Example segment summary."
+      },
+      {
+        "segment_id": "q-layer",
+        "question_count": 1,
+        "notes": "Example segment summary."
+      }
+    ],
+    "notes": "Result payload is intentionally minimal and non-normative in this public repo."
+  },
+  "metrics": {
+    "coverage": 0.5,
+    "mvs": 0.8,
+    "ir": 0.1,
+    "idi": 0.0,
+    "nss": 0.7,
+    "iis": 0.75
+  },
+  "validation": {
+    "grade": "L2",
+    "failed_gates": [
+      "example.gate.not-applicable"
+    ],
+    "notes": "Example grade and gates. Not operational."
+  },
+  "integrity": {
+    "report_sha256": "4dbb9a9ad1ac186282f0d5ca554129e7f36eeffe867c2cff56c4b309bd57b124",
+    "evidence_chain_sha256": "dc603cbb212f9b0f686f061da5acc41b9985769349d7c3afb9bf9f9550193f0e"
+  },
+  "attachments": [
+    {
+      "path": "evidence/run.example.0001/raw_outputs.jsonl",
+      "sha256": "33745178a201563c907bf34aa6d0c8cea3f0b0f2ad187c1023ec2209341a8ba7",
+      "content_type": "application/jsonl"
+    }
+  ]
+}

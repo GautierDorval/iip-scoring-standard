@@ -1,0 +1,43 @@
+{
+  "qbank_id": "qbank.example.minimal",
+  "qbank_version": "0.0.1",
+  "protocol_version_compat": "0.1.2",
+  "language": "en",
+  "notes": "Non-operational example for schema illustration only. Not a production QBank.",
+  "questions": [
+    {
+      "qid": "F-001",
+      "question": "What is the legal name of the organization as declared in the corpus snapshot?",
+      "language": "en",
+      "segment": "identity",
+      "s_crit": true,
+      "question_type": "F",
+      "sensitivity_class": "high",
+      "evidence_targets": [
+        "https://example.com/corpus/identity#legalName"
+      ],
+      "status": "active",
+      "introduced_in": "0.0.1",
+      "notes": "Example question (structure only)."
+    },
+    {
+      "qid": "M-001",
+      "question": "If the corpus snapshot does not contain sufficient evidence, what is the legitimate response?",
+      "language": "en",
+      "segment": "q-layer",
+      "s_crit": true,
+      "question_type": "M",
+      "sensitivity_class": "critical",
+      "variants": [
+        "If evidence is insufficient, what should the system do?",
+        "What is the non-response condition under this regime?"
+      ],
+      "evidence_targets": [
+        "https://example.com/corpus/policies#responseAuthorization"
+      ],
+      "status": "active",
+      "introduced_in": "0.0.1",
+      "notes": "Meta/boundary example question."
+    }
+  ]
+}

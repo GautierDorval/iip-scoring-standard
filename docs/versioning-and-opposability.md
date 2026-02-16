@@ -19,8 +19,17 @@ Integrity signals are intended to:
 - support audit reconstruction,
 - prevent silent rewriting of evidence surfaces.
 
-This repository may include release snapshots under `versions/` with hash lists for reference artifacts.
+This repository includes release snapshots under `versions/` with hash lists for reference artifacts.
+
+## Repository integrity (non-operational)
+
+This repository may include:
+- SHA-256 sum lists in `versions/<version>/SHA256SUMS.txt`,
+- minimal CI checks to validate JSON syntax and verify the published hash lists.
+
+These checks support **reference integrity** of this public specification surface.
+They do not publish scoring recipes, weights, or calibrated thresholds.
 
 ## Note
 
-No operational hashing procedures or tooling are provided here.
+No operational hashing procedures, scoring formulas, or end-to-end audit tooling are provided here.

@@ -12,3 +12,6 @@ IIP‑Scoring™ is an interpretive integrity audit protocol bounded by a corpus
 
 For canonical identity and doctrinal anchors:
 - https://gautierdorval.com/
+- https://gautierdorval.com/iip-scoring-cadre-doctrinal/
+
+Permitted uses and restrictions are defined in `LICENSE.md`.

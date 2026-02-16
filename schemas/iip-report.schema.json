@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/main/schemas/iip-report.schema.json",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/v0.1.2/schemas/iip-report.schema.json",
   "title": "IIP Report (Restricted Interface Schema)",
   "type": "object",
   "$comment": "Restricted public specification. Interface schema only. No calibration, no recipes, no operational decision rules are published here.",
@@ -97,7 +97,7 @@
       }
     },
     "corpus_snapshot": {
-      "$ref": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/main/schemas/corpus-snapshot.manifest.schema.json"
+      "$ref": "corpus-snapshot.manifest.schema.json"
     },
     "results": {
       "type": "object",

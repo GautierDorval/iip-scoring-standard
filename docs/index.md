@@ -6,6 +6,7 @@ The goal is to make the protocol *citable* and *auditable as a reference*, while
 
 ## Documents
 
+- Overview (prospect-facing): `overview.md`
 - Scope and boundaries: `scope.md`
 - Non-goals: `non-goals.md`
 - Glossary: `glossary.md`
@@ -16,6 +17,12 @@ The goal is to make the protocol *citable* and *auditable as a reference*, while
 - Compliance positioning (evidence layer): `compliance-positioning.md`
 - Canonical URLs: `canonical-urls.md`
 - FAQ: `faq.md`
+
+## Examples (structure only)
+
+- `../examples/iip-report.example.json`
+- `../examples/qbank.example.json`
+- `../examples/corpus-snapshot.manifest.example.json`
 
 ## Interfaces
 

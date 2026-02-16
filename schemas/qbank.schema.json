@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/main/schemas/qbank.schema.json",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/iip-scoring-standard/v0.1.2/schemas/qbank.schema.json",
   "title": "QBank (Restricted Interface Schema)",
   "type": "object",
   "$comment": "Restricted public specification. Interface schema only. No operational recipes, quotas, or sector calibrations are published here.",
